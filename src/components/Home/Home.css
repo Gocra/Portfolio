@@ -1,0 +1,60 @@
+.section.home{
+    padding: 8rem 0;
+}
+
+.home .content .name{
+    font-size: 64px;
+    margin-bottom: 0.75rem;
+    text-align: center;
+}
+
+.home .content .title{
+    font-size: 32px;
+    margin-bottom: 2.5rem;
+    color: rgb(0, 89, 255);
+    text-align: center;
+}
+
+.home .content .about{
+    font-size: 20px;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.home .content .about .em{
+    color: rgb(0, 89, 255);
+}
+
+.home .content .links{
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+
+.home .content .links .link{
+    font-size: 21px;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+    text-decoration: none;
+    color: white;
+    border-radius: 6px;
+    padding: 1rem 1.75rem;
+    transition: background-color 100ms ease-in-out;
+}
+
+.home .content .links .link.github{
+    background-color: rgb(24, 22, 22);
+}
+
+.home .content .links .link.github:hover{
+    background-color: rgb(12, 11, 11);
+}
+
+.home .content .links .link.contact{
+    background-color: rgb(0, 89, 255);
+}
+
+.home .content .links .link.contact:hover{
+    background-color: rgb(0, 64, 184);
+}

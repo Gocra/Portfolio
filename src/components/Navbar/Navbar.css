@@ -1,0 +1,77 @@
+.navbar{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: var(--navbar-height);
+    background-color: white;
+    padding: 1.75rem 2rem;
+    -webkit-box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+}
+
+.navbar .navbar-content{
+    max-width: 1180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.navbar .navbar-content .left{
+    width: 146.2px;
+}
+
+.navbar .navbar-content .center{
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+
+.navbar .navbar-content .center .link,
+.navbar .navbar-content .right .link{
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+    color: black;
+    text-decoration: none;
+}
+
+.navbar .navbar-content .center .link{
+    transition: color 100ms ease-in-out;
+    position: relative;
+    padding: 0.5rem;
+}
+
+.navbar .navbar-content .center .link:hover{
+    color: rgb(0, 89, 255);
+}
+
+.navbar .navbar-content .center .link::after{
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 50%;
+    translate: -50% 0;
+    width: 0px;
+    height: 2px;
+    background-color: rgb(0, 89, 255);
+    transition: width 150ms ease-in-out;
+}
+
+.navbar .navbar-content .center .link:hover::after{
+    width: 100%;
+}
+
+.navbar .navbar-content .right .link.contact{
+    background-color: rgb(0, 89, 255);
+    color: white;
+    border-radius: 6px;
+    padding: 1rem 1.75rem;
+    transition: background-color 100ms ease-in-out;
+}
+
+.navbar .navbar-content .right .link.contact:hover{
+    background-color: rgb(0, 64, 184);
+}

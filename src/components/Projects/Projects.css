@@ -1,0 +1,26 @@
+.section.projects .content{
+    width: 1180px;
+}
+
+.projects .content .title{
+    font-size: 42px;
+    margin-bottom: 4rem;
+}
+
+.projects .content .projects-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.25rem;
+}
+
+@media (max-width:836px){
+    .projects .content .projects-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width:552px){
+    .projects .content .projects-grid{
+        grid-template-columns: 1fr;
+    }
+}
