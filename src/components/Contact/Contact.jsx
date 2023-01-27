@@ -8,7 +8,9 @@ const Contact = () => {
         //     email = e.target.email.value,
         //     message = e.target.message.value
 
-        e.target.reset()
+        // e.target.reset()
+
+        alert("This website is still under construction, this feature does not work")
     }
 
   return (
