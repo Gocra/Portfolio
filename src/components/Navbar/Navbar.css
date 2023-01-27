@@ -5,9 +5,59 @@
     height: var(--navbar-height);
     background-color: white;
     padding: 1.75rem 2rem;
-    -webkit-box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
-    -moz-box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
-    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+}
+
+.navbar .hamburger-dropdown{
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    max-width: 100vw;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: white;
+    -webkit-box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+    pointer-events: none;
+}
+
+@media (min-width:768px){
+    .navbar .hamburger-dropdown{
+        opacity: 0 !important;
+    }
+}
+
+.navbar .hamburger-dropdown.show{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.navbar .hamburger-dropdown .link{
+    width: 100%;
+    padding: 1.25rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+    color: black;
+    text-decoration: none;
+}
+
+.navbar .hamburger-dropdown .link:hover{
+   background-color: rgba(0, 0, 0, 0.1);
+}
+
+.navbar .hamburger-dropdown .link.contact{
+    color: rgb(0, 89, 255);
 }
 
 .navbar .navbar-content{
@@ -16,16 +66,43 @@
     align-items: center;
     justify-content: space-between;
     margin: auto;
+    height: 100%;
+    position: relative;
 }
 
 .navbar .navbar-content .left{
     width: 146.2px;
 }
 
+.navbar .navbar-content .left .logo{
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+    transition: all 100ms ease-in-out;
+}
+
+.navbar .navbar-content .left .logo:hover{
+    color: rgb(0, 89, 255);
+}
+
 .navbar .navbar-content .center{
     display: flex;
     align-items: center;
     column-gap: 1.5rem;
+}
+
+@media (max-width: 768px){
+    .navbar .navbar-content .center,
+    .navbar .navbar-content .right{
+        display: none;
+    }
+}
+
+@media (min-width: 768px){
+    .navbar .navbar-content .hamburger{
+        display: none;
+    }
 }
 
 .navbar .navbar-content .center .link,
