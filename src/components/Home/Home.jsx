@@ -21,6 +21,10 @@ const Home = () => {
     if(window.innerWidth <= 576){
       if(titleRef.current.innerHTML !== textArr[0])
         titleRef.current.innerHTML = textArr[0]
+        currentText = 1
+        i = 0
+        adding = false
+        removing = true
       return
     }
 
