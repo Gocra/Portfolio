@@ -6,8 +6,9 @@ import GCMSImage from "../../assets/GCMS.png";
 export const projectData = [
   {
     image: textEditorImage,
-    title: "Text Editor",
-    description: "A simple Rich Text Editor",
+    title: "Rich Text Editor",
+    about:
+      "For this project I learned about the JavaScript execCommand function, which made formatting the text simple.",
     technologiesArr: ["ReactJS", "HTML5", "CSS3", "JavaScript"],
     demoLink: "https://text-editor-gocra.vercel.app/",
     codeLink: "https://github.com/Gocra/Text-Editor",
@@ -15,23 +16,27 @@ export const projectData = [
   {
     image: GCMSImage,
     title: "GCMS",
-    description: "A home page for a content management system service",
+    type: "Home page for a CMS service",
+    about:
+      "This was my first time using SCSS, it made it much easier to organise my code and was fun to learn.",
     technologiesArr: ["ReactJS", "HTML5", "SCSS", "JavaScript"],
     demoLink: "https://cms-gocra.vercel.app/",
     codeLink: "https://github.com/Gocra/CMS",
   },
   {
     image: platformerGameImage,
-    title: "Platformer Game",
-    description: "A simple 2d platformer game",
+    title: "2d Platformer Game",
+    about:
+      "Building this game gave me insight in to game development. I learned how the sprites are rendered and how they interact with one another, as well as building desktop GUIs.",
     technologiesArr: ["Python", "Pygame", "JSON"],
     demoLink: "https://gocra.itch.io/cs-platformer-game",
     codeLink: "https://github.com/Gocra/CS-Platformer-Game",
   },
   {
     image: levelEditorImage,
-    title: "Level Editor",
-    description: "A 2d level editor for my platformer game",
+    title: "2d Level Editor",
+    about:
+      "This project was built along side my platformer game to help build levels to play. From this project I learned a lot about 2d graphics and data storage to export my level to my game.",
     technologiesArr: ["Python", "Pygame", "JSON"],
     demoLink: "https://gocra.itch.io/cs-level-editor",
     codeLink: "https://github.com/Gocra/CS-Level-Editor",

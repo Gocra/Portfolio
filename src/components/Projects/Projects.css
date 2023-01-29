@@ -9,23 +9,18 @@
 
 .projects .content .projects-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 1.25rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
 }
 
-@media (max-width:1280px){
-    .projects .content .projects-grid{
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-}
-
-@media (max-width:836px){
+@media (max-width:1000px){
     .projects .content .projects-grid{
         grid-template-columns: 1fr 1fr;
+        gap: 0.75rem;
     }
 }
 
-@media (max-width:552px){
+@media (max-width:576px){
     .projects .content .projects-grid{
         grid-template-columns: 1fr;
     }

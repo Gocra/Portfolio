@@ -1,12 +1,13 @@
 import "./Project.css"
 
-const Project = ({image, title, description, technologiesArr, codeLink, demoLink}) => {
+const Project = ({image, title, type, about, technologiesArr, codeLink, demoLink}) => {
     return (
     <article className="project">
         <img className="preview-image" src={image} alt="" />
         <div className="body">
             <h3 className="name">{title}</h3>
-            <p className="description">{description}</p>
+            {type !== undefined ? <h4>{type}</h4> : null}
+            <p className="description">{about}</p>
             <ul className="tech-list">
             {technologiesArr.map((tech, i) => {
                 return <li key={i} className="tech">{tech}</li>
