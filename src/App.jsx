@@ -1,5 +1,4 @@
 import "./App.css";
-import "./section.css";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import Home from "./components/Home/Home";
@@ -8,11 +7,14 @@ import Projects from "./components/Projects/Projects";
 import Skills from "./components/Skills/Skills";
 
 function App() {
-  return <div className="App">
+  return <div className="app">
     <Navbar/>
     <Home/>
+    <div className="spacer layer1"></div>
     <Skills/>
-    <Projects/>
+    <div className="spacer layer2"></div>
+    <Projects />
+    <div className="spacer layer3"></div>
     <Contact />
     <Footer/>
   </div>;

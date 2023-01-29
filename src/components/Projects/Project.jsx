@@ -12,9 +12,9 @@ const Project = ({image, title, description, technologiesArr, codeLink, demoLink
                 return <li key={i} className="tech">{tech}</li>
             })}
             </ul>
-            <div className="links">
-                {demoLink !== undefined ? <a className="link demo" target="_blank" rel="noreferrer" href={demoLink}>Live Demo</a> : null}
-                <a className="link code" target="_blank" rel="noreferrer" href={codeLink}>Source Code</a>
+            <div className="buttons">
+                {demoLink !== undefined ? <a className="btn btn-blue" target="_blank" rel="noreferrer" href={demoLink}>Live Demo</a> : null}
+                <a className="btn btn-white" target="_blank" rel="noreferrer" href={codeLink}>Source Code</a>
             </div>
         </div>
     </article>

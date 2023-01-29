@@ -1,7 +1,7 @@
 .skills .content .my-skills .skill-list{
     width: 100%;
     max-width: 250px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .skills .content .my-skills .skill-list .category{

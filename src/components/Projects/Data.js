@@ -25,6 +25,7 @@ export const projectData = [
     title: "Platformer Game",
     description: "A simple 2d platformer game",
     technologiesArr: ["Python", "Pygame", "JSON"],
+    demoLink: "https://gocra.itch.io/cs-platformer-game",
     codeLink: "https://github.com/Gocra/CS-Platformer-Game",
   },
   {
@@ -32,6 +33,7 @@ export const projectData = [
     title: "Level Editor",
     description: "A 2d level editor for my platformer game",
     technologiesArr: ["Python", "Pygame", "JSON"],
+    demoLink: "https://gocra.itch.io/cs-level-editor",
     codeLink: "https://github.com/Gocra/CS-Level-Editor",
   },
 ];

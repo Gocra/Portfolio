@@ -19,7 +19,7 @@ const Navbar = () => {
                 <a className="link" href="#projects">Projects</a>
             </div>
             <div className="right">
-                <a className="link contact" href="#contact">Contact Me</a>
+                <a className="link btn btn-blue" href="#contact">Contact Me</a>
             </div>
               <Hamburger click={()=>setShowDropdownMenu(prev => !prev)}/>
         </div>

@@ -5,6 +5,13 @@ export const Data = [
   },
   {
     name: "Technologies",
-    skills: ["ReactJS", "ExpressJS", "MongoDB", "SASS/SCSS", "Pygame"],
+    skills: [
+      "NodeJS",
+      "ReactJS",
+      "ExpressJS",
+      "MongoDB",
+      "SASS/SCSS",
+      "Pygame",
+    ],
   },
 ];

@@ -10,6 +10,12 @@
     box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
 }
 
+@media (max-width:440px){
+    .navbar{
+        padding: 1.25rem 1.5rem;
+    }
+}
+
 .navbar .hamburger-dropdown{
     opacity: 0;
     transition: opacity 200ms ease-in-out;
@@ -26,12 +32,6 @@
     -moz-box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
     box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
     pointer-events: none;
-}
-
-@media (min-width:768px){
-    .navbar .hamburger-dropdown{
-        opacity: 0 !important;
-    }
 }
 
 .navbar .hamburger-dropdown.show{
@@ -57,7 +57,7 @@
 }
 
 .navbar .hamburger-dropdown .link.contact{
-    color: rgb(0, 89, 255);
+    color: var(--clr-blue);
 }
 
 .navbar .navbar-content{
@@ -70,20 +70,22 @@
     position: relative;
 }
 
-.navbar .navbar-content .left{
-    width: 146.2px;
-}
-
 .navbar .navbar-content .left .logo{
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 500;
     color: black;
     text-decoration: none;
     transition: all 100ms ease-in-out;
 }
 
+@media (max-width: 576px){
+    .navbar .navbar-content .left .logo{
+        font-size: 22px;
+    }
+}
+
 .navbar .navbar-content .left .logo:hover{
-    color: rgb(0, 89, 255);
+    color: var(--clr-blue);
 }
 
 .navbar .navbar-content .center{
@@ -99,9 +101,15 @@
     }
 }
 
-@media (min-width: 768px){
+@media (min-width: 769px){
     .navbar .navbar-content .hamburger{
         display: none;
+    }
+}
+
+@media (min-width:769px){
+    .navbar .hamburger-dropdown{
+        opacity: 0 !important;
     }
 }
 
@@ -122,7 +130,7 @@
 }
 
 .navbar .navbar-content .center .link:hover{
-    color: rgb(0, 89, 255);
+    color: var(--clr-blue);
 }
 
 .navbar .navbar-content .center .link::after{
@@ -133,7 +141,7 @@
     translate: -50% 0;
     width: 0px;
     height: 2px;
-    background-color: rgb(0, 89, 255);
+    background-color: var(--clr-blue);
     transition: width 200ms ease-in-out;
 }
 
@@ -141,14 +149,7 @@
     width: 100%;
 }
 
-.navbar .navbar-content .right .link.contact{
-    background-color: rgb(0, 89, 255);
-    color: white;
+.navbar .navbar-content .right .link{
     border-radius: 6px;
     padding: 1rem 1.75rem;
-    transition: background-color 100ms ease-in-out;
-}
-
-.navbar .navbar-content .right .link.contact:hover{
-    background-color: rgb(0, 64, 184);
 }

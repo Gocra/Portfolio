@@ -7,15 +7,23 @@
 
 :root{
   --navbar-height: 94px;
-  --xs: 0;
   --sm: 576px;
   --md: 768px;
   --lg: 992px;
   --xl: 1200px;
   --xxl: 1400px;
+
+  --clr-blue-bg: #f8f8ff;
+  --clr-blue: #0059ff;
+  --clr-dark-blue: #0040b8;
+  --clr-github: #181616;
+  --clr-dark-github: #0c0b0b;
 }
 
 html {
   scroll-padding-top: var(--navbar-height);
   scroll-behavior: smooth;
 }
+
+@import "./section.css";
+@import "./button.css";
