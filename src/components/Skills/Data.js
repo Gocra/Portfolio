@@ -12,6 +12,7 @@ export const Data = [
       "MongoDB",
       "SASS/SCSS",
       "Pygame",
+      "mySQL",
     ],
   },
 ];

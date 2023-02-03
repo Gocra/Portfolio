@@ -2,8 +2,18 @@ import platformerGameImage from "../../assets/platformerGame.png";
 import textEditorImage from "../../assets/textEditor.png";
 import levelEditorImage from "../../assets/levelEditor.png";
 import GCMSImage from "../../assets/GCMS.png";
+import surfsharkImage from "../../assets/surfshark.PNG";
 
 export const projectData = [
+  {
+    image: surfsharkImage,
+    title: "Surfshark Clone",
+    about:
+      "I recreated the Surfshark homepage because I liked how clean and professional it is while still having a human feel",
+    technologiesArr: ["ReactJS", "HTML5", "CSS3", "JavaScript"],
+    demoLink: "https://surfshark-clone.vercel.app/",
+    codeLink: "https://github.com/Gocra/surfshark-clone",
+  },
   {
     image: textEditorImage,
     title: "Rich Text Editor",
